@@ -1,0 +1,25 @@
+{
+  "name": "fat-ass-react",
+  "version": "1.0.0",
+  "description": "React",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-react": "^6.16.0",
+    "uglify-js-harmony": "^2.6.2",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "./build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "componentPath": "components/FatAss.js"
+}

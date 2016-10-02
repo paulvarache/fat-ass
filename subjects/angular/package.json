@@ -1,0 +1,20 @@
+{
+  "name": "fat-ass-angular",
+  "version": "1.0.0",
+  "description": "Angular",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install; npm run build",
+    "build": "./build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "crisper": "^2.0.2",
+    "uglify-js": "^2.7.3",
+    "vulcanize": "^1.14.8"
+  },
+  "componentPath": "components/fat-ass.js"
+}

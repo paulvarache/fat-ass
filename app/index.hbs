@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Fat Ass!</h1>
+        <p>This web page displays the amount of fat on your ass when using your favorite component based framework/library</p>
+        <p>I wrote the exact same application that just registers a component with a template that displays `Fat Ass!`. Then I compressed the app, bundling all js files together and minifying the output.</p>
+        <p>Here are the results so far:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Library</th>
+                    <th>Component Size</th>
+                    <th>JS (minified)</th>
+                    <th>JS (minified + gzipped)</th>
+                    <th>Demo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each subjects}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td>{{filesize this.componentSize}}</td>
+                        <td>{{filesize this.bundleSize}}</td>
+                        <td>{{filesize this.bundleGzippedSize}}</td>
+                        <td>
+                            <a href="/subjects/{{this.id}}/index.html">Link</a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </body>
+</html>
